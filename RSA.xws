@@ -1,0 +1,525 @@
+// xcas version=0.9.4 fontsize=21 font=0 currentlevel=4
+// fltk 7Fl_Tile 26 -1683 857 30 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -1683 857 29 21 0
+ASCII characters
+,
+// fltk N4xcas10Log_OutputE 26 -1654 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -1651 857 261 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -1651 857 29 21 0
+for (j:=32;j<=100;j++) {print(char(j))};
+,
+// fltk N4xcas10Log_OutputE 26 -1622 857 209 21 0
+ £!£"£#£$£%£&£'£(£)£*£+£,£-£.£/£0£1£2£3£4£5£6£7£8£9£:£;£<£=£>£?£@£A£B£C£D£E£F£G£H£I£J£K£L£M£N£O£P£Q£R£S£T£U£V£W£X£Y£Z£[£\£]£^£_£`£a£b£c£d£
+,
+// fltk N4xcas8EquationE 26 -1413 857 23 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 -1388 857 22 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -1388 857 22 21 0
+ONLY capital letters of the LATIN alphabet  
+,
+// fltk N4xcas10Log_OutputE 26 -1366 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -1364 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -1364 857 28 21 0
+(asc("A") = 65, ..., asc("Z") = 90) so that they all have 2 digits!
+,
+// fltk N4xcas10Log_OutputE 26 -1336 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -1333 857 32 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -1333 857 31 21 0
+
+,
+// fltk N4xcas10Log_OutputE 26 -1302 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -1299 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -1299 857 28 21 0
+we first choose 2 very large primes, p and q, which are secret
+,
+// fltk N4xcas10Log_OutputE 26 -1271 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -1268 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -1268 857 26 21 0
+p:=nextprime(857452321345678945615348675153785313513545313135435153)
+,
+// fltk N4xcas10Log_OutputE 26 -1242 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -1241 857 25 21 0 1
+857452321345678945615348675153785313513545313135435373
+]
+,
+// fltk 7Fl_Tile 26 -1214 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -1214 857 26 21 0
+q:=nextprime(9574138786465743137483136984548364156838461638468343648634)
+,
+// fltk N4xcas10Log_OutputE 26 -1188 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -1187 857 25 21 0 1
+9574138786465743137483136984548364156838461638468343648643
+]
+,
+// fltk 7Fl_Tile 26 -1160 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -1160 857 28 21 0
+and we form their product, which is made public
+,
+// fltk N4xcas10Log_OutputE 26 -1132 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -1129 857 75 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -1129 857 28 21 0
+n:=p*q
+,
+// fltk N4xcas10Log_OutputE 26 -1101 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -1100 857 46 21 0 1
+8209367527340753041105229890158261638582926528744322992897078091029555902056474475310091712645082731005145648839
+]
+,
+// fltk 7Fl_Tile 26 -1052 857 57 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -1052 857 31 21 0
+ifactor(n)
+,
+// fltk N4xcas10Log_OutputE 26 -1021 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -1020 857 25 21 0 1
+"Aborted"
+]
+,
+// fltk 7Fl_Tile 26 -993 857 23 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -993 857 22 21 0
+count the number of digits of p, q and n
+,
+// fltk N4xcas10Log_OutputE 26 -971 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -968 857 46 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -968 857 20 21 0
+[length(string(p)), length(string(q)), length(string(n))]
+,
+// fltk N4xcas10Log_OutputE 26 -948 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -947 857 25 21 0 1
+[54,58,112]
+]
+,
+// fltk 7Fl_Tile 26 -920 857 43 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -920 857 22 21 0
+ifactor(n)
+,
+// fltk N4xcas10Log_OutputE 26 -898 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -897 857 20 21 0 1
+"Aborted"
+]
+,
+// fltk 7Fl_Tile 26 -875 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -875 857 28 21 0
+we can easily compute the function phi(n), phi_n
+,
+// fltk N4xcas10Log_OutputE 26 -847 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -844 857 73 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -844 857 26 21 0
+phi_n:=(p-1)*(q-1)
+,
+// fltk N4xcas10Log_OutputE 26 -818 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -817 857 46 21 0 1
+8209367527340753041105229890158261638582926528744322983322081852242467085627722142086573770493107547223666564824
+]
+,
+// fltk 7Fl_Tile 26 -769 857 34 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -769 857 33 21 0
+we then pick a random exponent big_E, such that gcd(big_E, phi_n) = 1 
+,
+// fltk N4xcas10Log_OutputE 26 -736 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -733 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -733 857 28 21 0
+big_E is also made public; i.e. everybody knows **** n and big_E ****
+,
+// fltk N4xcas10Log_OutputE 26 -705 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -702 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -702 857 26 21 0
+big_E:=nextprime(4568531538443156358743168741353)
+,
+// fltk N4xcas10Log_OutputE 26 -676 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -675 857 25 21 0 1
+4568531538443156358743168741447
+]
+,
+// fltk 7Fl_Tile 26 -648 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -648 857 26 21 0
+gcd(big_E,phi_n);
+,
+// fltk N4xcas10Log_OutputE 26 -622 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -621 857 25 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 -594 857 25 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -594 857 24 21 0
+we then (using the extended gcd) compute big_D, the multiplicative inverse of big_E modulo phi_n
+,
+// fltk N4xcas10Log_OutputE 26 -570 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -567 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -567 857 28 21 0
+ONLY the receiver knows **** p, q, and big_D ****
+,
+// fltk N4xcas10Log_OutputE 26 -539 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -536 857 73 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -536 857 26 21 0
+[s, t, mkd]:=igcdex(big_E,phi_n)
+,
+// fltk N4xcas10Log_OutputE 26 -510 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -509 857 46 21 0 1
+[-3361567809152329663900803663149438561922098863965207972589810567505057256485280235971052358778352121022620510929,1870720065045301962451071430061,1]
+]
+,
+// fltk 7Fl_Tile 26 -461 857 73 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -461 857 26 21 0
+big_D:= (s % phi_n) % 0:; if (big_D < 0) {big_D := big_D + phi_n}
+,
+// fltk N4xcas10Log_OutputE 26 -435 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -434 857 46 21 0 1
+"Done",4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+]
+,
+// fltk 7Fl_Tile 26 -386 857 54 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -386 857 28 21 0
+(big_D*big_E % phi_n) % 0
+,
+// fltk N4xcas10Log_OutputE 26 -358 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -357 857 25 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 -330 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -330 857 28 21 0
+here we cannot use Fermat's theorem with phi_n because the latter is NOT prime; however, 
+,
+// fltk N4xcas10Log_OutputE 26 -302 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -299 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -299 857 28 21 0
+the above procedure has been included in the command powermod(big_E,-1,phi_n); 
+,
+// fltk N4xcas10Log_OutputE 26 -271 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -268 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -268 857 28 21 0
+indeed we have:
+,
+// fltk N4xcas10Log_OutputE 26 -240 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -237 857 75 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -237 857 28 21 0
+big_D2:=powermod(big_E,-1,phi_n)
+,
+// fltk N4xcas10Log_OutputE 26 -209 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -208 857 46 21 0 1
+4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+]
+,
+// fltk 7Fl_Tile 26 -160 857 51 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -160 857 28 21 0
+(big_D2*big_E % phi_n) % 0
+,
+// fltk N4xcas10Log_OutputE 26 -132 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -131 857 22 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 -107 857 51 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -107 857 28 21 0
+big_D == big_D2
+,
+// fltk N4xcas10Log_OutputE 26 -79 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 -78 857 22 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 -54 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 -54 857 28 21 0
+overall, it is best, and simplest, to use irem:
+,
+// fltk N4xcas10Log_OutputE 26 -26 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 -23 857 51 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 -23 857 28 21 0
+big_D3:=irem(s,phi_n):;
+,
+// fltk N4xcas10Log_OutputE 26 5 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 6 857 22 21 0 1
+"Done"
+]
+,
+// fltk 7Fl_Tile 26 30 857 51 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 30 857 28 21 0
+big_D == big_D3
+,
+// fltk N4xcas10Log_OutputE 26 58 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 59 857 22 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 83 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 83 857 28 21 0
+to "encrypt this message" we first compute the corresponding integer, text_num,
+,
+// fltk N4xcas10Log_OutputE 26 111 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 114 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 114 857 28 21 0
+and then the secret_message; of course we make sure that text_num < n.
+,
+// fltk N4xcas10Log_OutputE 26 142 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 145 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 145 857 26 21 0
+text_num:=code("ENCRYPT THIS MESSAGE")
+,
+// fltk N4xcas10Log_OutputE 26 171 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 172 857 25 21 0 1
+6978678289808432847273833277698383657169
+]
+,
+// fltk 7Fl_Tile 26 199 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 199 857 26 21 0
+text_num < n
+,
+// fltk N4xcas10Log_OutputE 26 225 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 226 857 25 21 0 1
+1
+]
+,
+// fltk 7Fl_Tile 26 253 857 73 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 253 857 26 21 0
+secret_message:=powermod(text_num,big_E,n)
+,
+// fltk N4xcas10Log_OutputE 26 279 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 280 857 46 21 0 1
+2138987722548808148517915321478382461981726556787633274609132226658343177967622540143864271974135340951236872103
+]
+,
+// fltk 7Fl_Tile 26 328 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 328 857 28 21 0
+to decipher the secret_message we first raise it to the power big_D mod n
+,
+// fltk N4xcas10Log_OutputE 26 356 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 359 857 29 21 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 26 359 857 28 21 0
+and then decode the resulting integer
+,
+// fltk N4xcas10Log_OutputE 26 387 857 1 21 0
+
+]
+,
+// fltk 7Fl_Tile 26 390 857 52 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 390 857 26 21 0
+deciphered_message:=powermod(secret_message,big_D,n)
+,
+// fltk N4xcas10Log_OutputE 26 416 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 417 857 25 21 0 1
+6978678289808432847273833277698383657169
+]
+,
+// fltk 7Fl_Tile 26 444 857 47 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 444 857 26 21 0
+decode(deciphered_message)
+,
+// fltk N4xcas10Log_OutputE 26 470 857 1 21 0
+
+,
+// fltk N4xcas8EquationE 26 471 857 20 21 0 1
+"ENCRYPT THIS MESSAGE"
+]
+,
+// fltk 7Fl_Tile 26 493 857 30 21 0
+[
+// fltk N4xcas19Multiline_Input_tabE 26 493 857 29 21 0
+
+,
+// fltk N4xcas10Log_OutputE 26 522 857 1 21 0
+
+]
+// context 3059 giac archive
+7 0 25 8 0 0 'cas_setup' 7 0 11 0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+7 0 2 1 ½×Ùß|Û=
+1 Vçž¯Ò<
+0 6 0
+7 0 4 0 1 0
+0 50 0
+0 0 0
+0 25 0
+0 0 0
+0 0 0
+0 0 0
+8 0 0 'xyztrange' 7 0 16 1      $À
+1      $@
+1      $À
+1      $@
+1      $À
+1      $@
+1      $À
+1      $@
+1      $À
+1      $@
+1 fffffö¿
+1 ™™™™™ñ?
+0 1 0
+1        
+1      ð?
+0 3 0
+7 0 0 7 0 0 8 0 15 7 0 2 2 4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+6 5 big_D 8 0 15 7 0 2 2 4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+6 6 big_D2 8 0 15 7 0 2 2 4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+6 6 big_D3 8 0 15 7 0 2 2 4568531538443156358743168741447
+6 5 big_E 8 0 15 7 0 2 8 0 73 7 0 3 7 1 1 6 1 c 7 1 1 0 0 0
+8 0 42 7 0 2 7 0 2 7 1 3 6 1 L 6 1 C 6 1 k 7 1 0 7 0 4 8 0 15 7 0 2 8 0 0 'asc' 6 1 c 6 1 L 8 0 15 7 0 2 12 0 | 6 1 C 8 0 71 7 0 4 8 0 15 7 0 2 0 0 0
+6 1 k 8 0 35 7 1 2 6 1 k 8 0 0 size 6 1 L 8 0 15 7 0 2 8 0 1 7 0 2 6 1 k 0 1 0
+6 1 k 8 0 15 7 0 2 8 0 0 'cat' 7 1 2 6 1 C 8 0 0 'string' 8 0 0 at 7 0 2 6 1 L 6 1 k 6 1 C 8 0 43 8 0 0 'expr' 6 1 C 6 4 code 8 0 15 7 0 2 2 4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+6 1 d 8 0 15 7 0 2 2 4847799718188423377204426227008823076660827664779115010732271284737409829142441906115521411714755426201046053895
+6 2 d2 8 0 15 7 0 2 2 6978678289808432847273833277698383657169
+6 18 deciphered_message 8 0 15 7 0 2 8 0 73 7 0 3 7 1 1 6 1 n 7 1 1 0 0 0
+8 0 42 7 0 2 7 0 2 7 1 3 6 1 L 6 1 C 6 1 k 7 1 0 7 0 4 8 0 15 7 0 2 8 0 0 'string' 6 1 n 6 1 L 8 0 15 7 0 2 12 0 | 6 1 C 8 0 71 7 0 4 8 0 15 7 0 2 0 0 0
+6 1 k 8 0 35 7 1 2 6 1 k 8 0 1 7 0 2 8 0 0 size 6 1 L 0 -1 0
+8 0 15 7 0 2 8 0 1 7 0 2 6 1 k 0 2 0
+6 1 k 8 0 15 7 0 2 8 0 0 'cat' 7 1 2 6 1 C 8 0 0 'char' 8 0 0 'expr' 8 0 0 'cat' 7 1 2 8 0 0 at 7 0 2 6 1 L 6 1 k 8 0 0 at 7 0 2 6 1 L 8 0 1 7 0 2 6 1 k 0 1 0
+6 1 C 8 0 43 6 1 C 6 6 decode 8 0 15 7 0 2 2 6978678289808432847273833277698383657169
+6 8 decrypte 8 0 15 7 0 2 0 101 0
+6 1 j 8 0 15 7 0 2 0 1 0
+6 3 mkd 8 0 15 7 0 2 2 8209367527340753041105229890158261638582926528744322992897078091029555902056474475310091712645082731005145648839
+6 1 n 8 0 15 7 0 2 2 857452321345678945615348675153785313513545313135435373
+6 1 p 8 0 15 7 0 2 2 8209367527340753041105229890158261638582926528744322983322081852242467085627722142086573770493107547223666564824
+6 5 phi_n 8 0 15 7 0 2 2 9574138786465743137483136984548364156838461638468343648643
+6 1 q 8 0 15 7 0 2 2 -3361567809152329663900803663149438561922098863965207972589810567505057256485280235971052358778352121022620510929
+6 1 s 8 0 15 7 0 2 2 2138987722548808148517915321478382461981726556787633274609132226658343177967622540143864271974135340951236872103
+6 14 secret_message 8 0 15 7 0 2 2 1870720065045301962451071430061
+6 1 t 8 0 15 7 0 2 2 6978678289808432847273833277698383657169
+6 8 text_num 8 0 0 'xcas_mode' 0 0 0
+
